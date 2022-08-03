@@ -42,33 +42,26 @@
 <!-- Ends image section -->
 
 <!-- Starts form section -->
-<div class="form-container ">
+<div class="form-container col-md-6">
     <form class="form-horizontal" onsubmit="return false;">
         <!-- Selection for "Pk" -->
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="pk">Private Key:</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" id="pk" name="pk" placeholder="your wallet private key">
-          </div>
+          <label class="control-label" for="pk">Private Key:</label>
+          <input type="text" class="form-control" id="pk" name="pk" placeholder="your wallet private key">
         </div>
 
         <!-- Selection for "SGX Endpoint" -->
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="sgxendpt">SGX Endpt:</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" id="sgxendpt" name="sgxendpt" placeholder="your SGX endpoint">
-          </div>
+          <label class="control-label" for="sgxendpt">SGX Endpt:</label>
+          <input type="url" class="form-control" id="sgxendpt" name="sgxendpt" placeholder="https:// ...your SGX endpoint">
         </div>
 
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="sgxendpt">Our SGX Endpt if you trust us:</label>
+          <label class="control-label" for="sgxendpt">Our SGX Endpt if you trust us:</label>
         </div>
 
-        <div class="form-group row"> 
-        <label class="control-label col-sm-2" for="">&nbsp;</label>                
-          <div class="col-sm-offset-2 col-sm-4">
-            <button type="submit" class="btn btn-primary" onclick="addCk()">CK Me!</button>
-          </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary" onclick="addCk()">CK Me!</button>
         </div>
       </form>
     <!-- Ends form section -->
