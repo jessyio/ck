@@ -11,10 +11,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+    <style>
+      h2 {
+        color: rgb(58, 118, 209);
+        font-family: verdana;
+        font-size: 300%;
+      }
+      p {
+        color: rgb(247, 247, 247);
+        font-family: courier;
+        font-size: 160%;
+        border: 2px solid rgba(2, 62, 70, 0.144);
+        padding: 20px;
+      }
+      form {
+        border: 2px solid rgb(2, 62, 70);
+        padding: 20px;
+      }
+      body {
+        background-color: rgb(89, 158, 204);
+      }
+      ::placeholder {
+        font-size: 12px;
+        font-style: italic;
+      }
+    </style>
     
     <title> CK (Complete Knowledge) Yourself! </title>
-    
+    {% block head %}
+    {% endblock %}
   </head>
   
   <body>

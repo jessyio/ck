@@ -1,7 +1,5 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-import numpy as np
-import joblib
 
 DB = SQLAlchemy()
 APP = Flask(__name__)
