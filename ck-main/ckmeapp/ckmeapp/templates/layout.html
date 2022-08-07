@@ -1,0 +1,66 @@
+  
+  
+<!doctype html>
+<html>
+  
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      h2 {
+        color: rgb(240, 241, 242);
+        font-family: 'Courier New', monospace;
+        font-size: 300%;
+        text-align: center;
+      }
+      p {
+        color: rgb(247, 247, 247);
+        font-family: 'Courier New', monospace;
+        font-size: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+      form {
+        border: 2px solid rgb(14, 14, 14);
+        padding: 20px;
+        text-align: center;
+      }
+      body {
+        background-color: rgb(14, 14, 14);
+      }
+      ::placeholder {
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+    
+    <title> CK (Complete Knowledge) Your Wallet </title>
+
+    
+    {% block head %}
+    {% endblock %}
+  </head>
+  
+  <body>
+      <div class="container pt-3">
+      
+        <div id="content">{% block content %}{% endblock %}</div>
+      
+        <div id="footer">
+          {% block footer %}
+          <div class="row">
+
+          </div>
+          {% endblock %}
+        </div>
+      </div>
+    
+  </body>
+</html>

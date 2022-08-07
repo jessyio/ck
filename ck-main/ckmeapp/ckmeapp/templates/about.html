@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center mb-4">
+        <p>  
+            <br>
+            <br>
+            <br>
+            <button type="button" style="background-color:yellow;border-color:black;color:black;" onclick="window.location.href='/'">Home</button>
+            <input type="button" style="background-color:yellow;border-color:black;color:black;" onclick="location.href='https://docs.google.com/presentation/d/1sSMpq-CiM9N6BqogTmI_Doghwo8TRXgsV-KE7lSfdUI/edit#slide=id.g7e1311aef4_0_123';" value="Phil's Security Seminar"/>
+            <input type="button" style="background-color:yellow;border-color:black;color:black;" onclick="location.href='https://docs.google.com/presentation/d/1WB3zH9sqbkxgGzXUeimT5RrlLu4RN9y7iwG_0Sub5LA/edit?usp=sharing';" value="Our IC3 Presentation"/>
+            <br>
+            <br>
+            CK stands for Complete Knowledge.
+        <b> A  PoCK (Proof of Complete Knowledge) may be viewed as a strengthened variant of a conventional proof of knowledge.
+        <b>It shows not just knowledge of a secret (witness), but fully unencumbered knowledge, i.e., unrestricted ability to use the secret for any desired purpose.
+        </p>
+    </div>
+
+    <!-- Starts image section -->
+    <div class="row justify-content-md-center mb-4">
+        <p>Why does it matter?
+            Proofs of knowledge (PoKs) do not actually prove knowledge in cases where a prover may interact with other entities, which introduces a range of coercive attacks.
+            Whereas integrating PoCK into existing protocols to safeguard users from coercion.
+        </p>
+            <!--
+            <div class="thumbnail">
+                <img src="{{url_for('static', filename='images/originaldataset.jpg')}}" class="img-thumbnail" />
+            -->
+        </div>
+    </div>
+
+    <!-- Ends image section -->
+    
+
+    <!-- Starts image section -->
+    <div class="row justify-content-md-center mb-4">
+        <p>
+            <br>
+            Possible attacks CKing your wallet can protect against:
+            <br>
+            Deniable Messaging: Require CK proof of forgeability with message
+            <br>
+            Voting: Require PoCK on vote key for ability to fake vote / re-vote with vote
+            <br>
+            Bribery: Require PoCK on funds key for ability to equivocate against briber
+            <br> 
+            <br>If you don’t use CK, your blockchain protocol is vulnerable to bribery/coercion. If you use CK, it helps in the design of protocols resistant to coercive attacks.
+            <!--
+            <div class="thumbnail">
+                <img src="{{url_for('static', filename='images/Cleaneddataset.jpg')}}" class="img-thumbnail" />
+            -->
+
+        </p>
+    </div>
+
+    <!-- Ends image section -->
+    <div style="position: relative">
+    
+        <p style="position: fixed; bottom: 0; width:75%; text-align: center">
+          <br>
+          <!--
+          <input type="button" onclick="location.href='https://docs.google.com/presentation/d/1sSMpq-CiM9N6BqogTmI_Doghwo8TRXgsV-KE7lSfdUI/edit#slide=id.g7e1311aef4_0_123';" value="Phil's Security Seminar"/>
+          -->
+          <br>
+          <br>
+          Made at <a href="https://www.initc3.org/events/2022-08-01-ic3-blockchain-camp-2022" style="color:yellow;" target="_blank">IC3</a> by
+          <a href="https://pdaian.com/" style="color:yellow;" target="_blank">Phil Daian</a> | 
+          <a href="https://github.com/relyt29" style="color:yellow;" target="_blank">Tyler Kell</a> | 
+          <a href="https://users.cs.duke.edu/~sw485/" style="color:yellow;" target="_blank">Sarisht Wadhwa</a> | 
+          <a href="https://austinliu.xyz/" style="color:yellow;" target="_blank">Austin Liu</a> | 
+          <a href="https://github.com/jaa2" style="color:yellow;" target="_blank">James Austgen</a> | 
+          <a href="https://www.ttiangong.com/" style="color:yellow;" target="_blank">Tiantian Gong</a> | 
+          <a href="https://dci.mit.edu/nicolas-xuanyi-zhang" style="color:yellow;" target="_blank">Nicolas Zhang</a> | 
+          <a href="https://github.com/HALOSTAR" style="color:yellow;" target="_blank">Hans Shen</a> | 
+          <a href="https://www.haaroonyousaf.com/" style="color:yellow;" target="_blank">Haaroon Yousaf</a> | 
+          <a href="https://twitter.com/13yearoldvc" style="color:yellow;" target="_blank">13yearoldvc</a> ㊙ 2022
+        </p>
+      </div>
+
+{% endblock %}
